@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interior Design Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="sidebar" id="mySidebar">
+        <div class="sidebar-header">
+            <h3><b>Company<br>Name</b></h3>
+        </div>
+        <a href="javascript:void(0)" onclick="closeSidebar()" class="close-menu-btn" style="display:none;">Close
+            Menu</a>
+        <a href="#" onclick="closeSidebar()">Home</a>
+        <a href="#showcase" onclick="closeSidebar()">Showcase</a>
+        <a href="#services" onclick="closeSidebar()">Services</a>
+        <a href="#designers" onclick="closeSidebar()">Designers</a>
+        <a href="#packages" onclick="closeSidebar()">Packages</a>
+        <a href="#contact" onclick="closeSidebar()">Contact</a>
+    </nav>
+
+    <header class="mobile-header">
+        <span class="menu-icon" onclick="openSidebar()">&#9776;</span>
+        <span class="company-name">Company Name</span>
+    </header>
+
+    <div class="overlay" onclick="closeSidebar()" id="myOverlay"></div>
+
+    <!-- Page Content -->
+    <div class="main-content">
+
+        <!-- Header -->
+        <div class="section" id="showcase">
+            <h1 class="section-title"><b>Interior Design</b></h1>
+            <h1 class="section-subtitle"><b>Showcase.</b></h1>
+            <div class="divider"></div>
+        </div>
+
+        <!-- Photo grid -->
+        <div class="row">
+            <div class="col-half">
+                <img src="w3images/Kitchen.jpg" onclick="onClick(this)" alt="Concrete meets bricks">
+                <img src="w3images/Living-Room.jpg" onclick="onClick(this)"
+                    alt="Light, white and tight scandinavian design">
+                <img src="w3images/Dining-Room.jpg" onclick="onClick(this)" alt="White walls with designer chairs">
+            </div>
+
+            <div class="col-half">
+                <img src="w3images/Atrium.jpg" onclick="onClick(this)" alt="Windows for the atrium">
+                <img src="w3images/Bed-Room.jpg" onclick="onClick(this)" alt="Bedroom and office in one space">
+                <img src="w3images/Living-Room2.jpg" onclick="onClick(this)" alt="Scandinavian design">
+            </div>
+        </div>
+
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Services -->
+        <div class="section" id="services">
+            <h1 class="section-subtitle"><b>Services.</b></h1>
+            <div class="divider"></div>
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!--Designers -->
+        <div class="section" id="designers">
+            <h1 class="section-subtitle"><b>Designers.</b></h1>
+            <div class="divider"></div>
+            <p>The best team in the world.</p>
+            <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            <p><b>Our designers are thoughtfully chosen</b>:</p>
+        </div>
+
+        <!--Team -->
+        <div class="team-row">
+            <div class="col-third">
+                <div class="team-card">
+                    <img src="w3images/team2.jpg" alt="John">
+                    <div class="team-info">
+                        <h3>John Doe</h3>
+                        <p style="color:grey;">CEO & Founder</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-third">
+                <div class="team-card">
+                    <img src="w3images/Team1.jpg" alt="Jane">
+                    <div class="team-info">
+                        <h3>Jane Doe</h3>
+                        <p style="color:grey;">Designer</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-third">
+                <div class="team-card">
+                    <img src="w3images/team3.jpg" alt="Mike">
+                    <div class="team-info">
+                        <h3>Mike Ross</h3>
+                        <p style="color:grey;">Architect</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Packages -->
+        <div class="section" id="packages">
+            <h1 class="section-subtitle"><b>Packages.</b></h1>
+            <div class="divider"></div>
+            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-half">
+                <ul class="package-list">
+                    <li class="package-header">Basic</li>
+                    <li>Floorplanning</li>
+                    <li>10 hours support</li>
+                    <li>Photography</li>
+                    <li>20% furniture discount</li>
+                    <li>Good deals</li>
+                    <li>
+                        <h2>$ 199</h2>
+                        <span style="opacity:0.6;">per room</span>
+                    </li>
+                    <li>
+                        <button class="btn">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-half">
+                <ul class="package-list">
+                    <li class="package-header pro">Pro</li>
+                    <li>Floorplanning</li>
+                    <li>50 hours support</li>
+                    <li>Photography</li>
+                    <li>50% furniture discount</li>
+                    <li>GREAT deals</li>
+                    <li>
+                        <h2>$ 249</h2>
+                        <span style="opacity:0.6;">per room</span>
+                    </li>
+                    <li>
+                        <button class="btn btn-red">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Contact -->
+        <div class="section" id="contact">
+            <h1 class="section-subtitle"><b>Contact.</b></h1>
+            <div class="divider"></div>
+            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting
+                new people!</p>
+            <form action="/action_page.php" target="_blank">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-input" type="text" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-input" type="text" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <input class="form-input" type="text" name="Message" required>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <!--Footer -->
+        <div class="footer">
+            <p>Powered by <a href="#" title="Custom CSS" target="_blank">Shoaib Raza</a></p>
+            </p>
+            <p>&copy; 2025 all Rights Reserved by Shoaib.</p>
+        </div>
+
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
