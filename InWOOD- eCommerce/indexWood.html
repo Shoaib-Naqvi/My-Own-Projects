@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="INWOOD - Exclusive Deals of Furniture Collection. Shop the latest modern, stylish, and comfortable furniture.">
+    <title>INWOOD e-Commerce Web App</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesWood.css">
+</head>
+
+<body>
+
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/Logo.svg" alt="" width="144px" height="36px">
+            </a>
+
+            <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/header-icon/hamburger.svg" alt="" width="24" height="24">
+            </button>
+
+            <nav class="nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#features" class="nav-link">Categories</a></li>
+                    <li><a href="#inspiration" class="nav-link">About</a></li>
+                    <li><a href="#newsletter" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="Search">
+                    <img src="assets/header-icon/search.svg" alt="" width="24" height="24">
+                </button>
+                <button class="icon-btn" aria-label="Cart">
+                    <img src="assets/header-icon/cart.svg" alt="" width="24" height="24">
+                </button>
+                <button class="icon-btn" aria-label="Account">
+                    <img src="assets/header-icon/profile.svg" alt="" width="24" height="24">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Exclusive Deals of Furniture Collection</h1>
+                    <p class="hero-text">Explore different categories. Find the best deals.</p>
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                </div>
+                <!-- Hero Background is handled via CSS or Image to match design -->
+            </div>
+        </section>
+
+        <!-- Categories (Explore by Category) -->
+        <section id="features" class="features section">
+            <div class="container">
+                <header class="section-header center">
+                    <h2 class="section-title">Explore by Category</h2>
+                </header>
+
+                <div class="category-search-container">
+                    <div class="search-box">
+                        <img src="assets/header-icon/search.svg" class="search-icon" alt="">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <button class="mobile-filter-btn" aria-label="Filter"><img
+                                src="assets/header-icon/hamburger.svg" alt=""></button>
+                    </div>
+                    <div class="category-tags">
+                        <button class="tag active">Bedroom</button>
+                        <button class="tag">Dining Room</button>
+                        <button class="tag">Meeting Room</button>
+                        <button class="tag">Workspace</button>
+                        <button class="tag">Living Room</button>
+                        <button class="tag">Kitchen</button>
+                        <button class="tag">Living Space</button>
+                    </div>
+                    <div class="all-categories-btn-wrapper">
+                        <a href="#category-details" id="all-categories-btn" class="btn btn-secondary-filled">All
+                            Categories <img src="assets/INWOOD/right-arrow.svg" alt="" width="16" height="16"></a>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card feature-card-large">
+                        <img src="assets/category/BedRoom.jpg" alt="Bedroom" class="category-img">
+                        <div class="feature-card-content">
+                            <h3>Bedroom</h3>
+                            <button class="btn btn-white btn-small category-btn"
+                                data-category="Bedroom">Bedroom</button>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/category/DiningRoom.jpg" alt="Dining Room" class="category-img">
+                        <div class="feature-card-content">
+                            <h3>Dining Room</h3>
+                            <button class="btn btn-white btn-small category-btn" data-category="Dining Room">Dining
+                                Room</button>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/category/MeetingRoom.jpg" alt="Meeting Room" class="category-img">
+                        <div class="feature-card-content">
+                            <h3>Meeting Room</h3>
+                            <button class="btn btn-white btn-small category-btn" data-category="Meeting Room">Meeting
+                                Room</button>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/category/WorkSpace.jpg" alt="Workspace" class="category-img">
+                        <div class="feature-card-content">
+                            <h3>Workspace</h3>
+                            <button class="btn btn-white btn-small category-btn"
+                                data-category="Workspace">Workspace</button>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/category/LivingRoom.jpg" alt="Living Room" class="category-img">
+                        <div class="feature-card-content">
+                            <h3>Living Room</h3>
+                            <button class="btn btn-white btn-small category-btn" data-category="Living Room">Living
+                                Room</button>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/category/Kitchen.jpg" alt="Kitchen" class="category-img">
+                        <div class="feature-card-content">
+                            <h3>Kitchen</h3>
+                            <button class="btn btn-white btn-small category-btn"
+                                data-category="Kitchen">Kitchen</button>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/category/LivingSpace.jpg" alt="Living Space" class="category-img">
+                        <div class="feature-card-content">
+                            <h3>Living Space</h3>
+                            <button class="btn btn-white btn-small category-btn" data-category="Living Space">Living
+                                Space</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Details Section (Hidden by default, will show on click) -->
+        <section id="category-details" class="category-details section section-bg-light" style="display: none;">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title" id="details-title">Category Details</h2>
+                    <p class="section-subtitle">Flexible rental options for your choice.</p>
+                </header>
+                <div class="details-grid">
+                    <div class="details-image" id="details-image">
+                        <!-- Background image will be set via JS -->
+                    </div>
+                    <div class="details-content">
+                        <h3 id="details-category-name">Bedroom Collection</h3>
+                        <p class="details-desc" id="details-description">Transform your space with our premium
+                            collection. We offer flexible rental plans tailored to your needs.</p>
+
+                        <div class="rental-plans">
+                            <div class="plan-card">
+                                <span class="plan-title">Hourly</span>
+                                <span class="plan-price" id="price-hour">$10/hr</span>
+                            </div>
+                            <div class="plan-card highlight">
+                                <span class="plan-title">Daily</span>
+                                <span class="plan-price" id="price-day">$50/day</span>
+                            </div>
+                            <div class="plan-card">
+                                <span class="plan-title">Monthly</span>
+                                <span class="plan-price" id="price-month">$400/mo</span>
+                            </div>
+                        </div>
+
+                        <div class="details-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-secondary-outline">View Catalog</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Products -->
+        <section id="products" class="products section">
+            <div class="container">
+                <header class="section-header center">
+                    <h2 class="section-title">Popular Products</h2>
+                </header>
+
+                <div class="product-grid" id="productGrid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-card-image">
+                            <img src="assets/chairs/11-chair-png-image 1.png" alt="Armchair" loading="lazy">
+                        </div>
+                        <div class="product-card-info">
+                            <h3 class="product-title">Armchair</h3>
+                            <p class="product-desc">Light single chair</p>
+                            <p class="product-price">$145</p>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-card-image">
+                            <img src="assets/chairs/48550-2-chair-download-free-hq-image 1.png" alt="Premium Sofa"
+                                loading="lazy">
+                        </div>
+                        <div class="product-card-info">
+                            <h3 class="product-title">Premium Sofa</h3>
+                            <p class="product-desc">Light single chair</p>
+                            <p class="product-price">$145</p>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-card-image">
+                            <!-- Placeholder image is needed here, using existing ones -->
+                            <img src="assets/chairs/chair 2.png" alt="Minimal Sofa" loading="lazy">
+                        </div>
+                        <div class="product-card-info">
+                            <h3 class="product-title">Minimal Sofa</h3>
+                            <p class="product-desc">Light single chair</p>
+                            <p class="product-price">$145</p>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-card-image">
+                            <img src="assets/chairs/unnamed 1.png" alt="Dining Chair" loading="lazy">
+                        </div>
+                        <div class="product-card-info">
+                            <h3 class="product-title">Dining Chair</h3>
+                            <p class="product-desc">Light single chair</p>
+                            <p class="product-price">$145</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="center u-mt-lg">
+                    <a href="#" class="btn btn-secondary-filled">Explore all items <img
+                            src="assets/INWOOD/right-arrow.svg" alt="" width="16" height="16"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Package -->
+        <section class="special-package section">
+            <div class="container center">
+                <h2 class="section-title">Special Package</h2>
+                <div class="special-package-content">
+                    <div class="special-package-image">
+                        <!-- Large main image -->
+                        <img src="assets/chairs/chair 2.png" alt="Larkin Wood Full Set" class="p-img-main">
+                        <button class="btn btn-icon-floating"><img src="assets/header-icon/search.svg" alt=""></button>
+                    </div>
+                    <div class="special-package-details">
+                        <h3 class="sp-title">Larkin Wood Full Set</h3>
+                        <div class="rating">
+                            <!-- Replaced SVG stars with unicode for now as assets are missing -->
+                            <span>★★★★★</span>
+                        </div>
+                        <p class="sp-price">$729.99</p>
+                        <button class="btn btn-primary btn-add-cart">Add to cart <img src="assets/header-icon/cart.svg"
+                                style="filter: invert(1);" alt=""></button>
+
+                        <div class="sp-desc">
+                            <h4>Description</h4>
+                            <p>Cast Aluminum Outdoor Chaise Lounge is an elegant and classic touch to your outdoor
+                                space, this cast Aluminum Chaise Lounge combines the appearance, function and quality
+                                all together, offering you with the best experience.</p>
+                            <a href="#" class="btn-more">See More <img src="assets/INWOOD/right-arrow.svg" alt=""></a>
+                        </div>
+
+                        <div class="sp-sub-items">
+                            <div class="sp-item">
+                                <img src="assets/chairs/unnamed 1.png" alt="">
+                                <div class="sp-item-info">
+                                    <h5>Living Room Family Set</h5>
+                                    <div class="rating-mini">
+                                        <span>★</span> 5.0
+                                    </div>
+                                    <p class="sp-item-price">$229.00</p>
+                                    <a href="#">See Details</a>
+                                </div>
+                                <button class="btn-plus">+</button>
+                            </div>
+                            <div class="sp-item">
+                                <img src="assets/chairs/11-chair-png-image 1.png" alt="">
+                                <div class="sp-item-info">
+                                    <h5>Living Room Special Set</h5>
+                                    <div class="rating-mini">
+                                        <span>★</span> 4.8
+                                    </div>
+                                    <p class="sp-item-price">$329.00</p>
+                                    <a href="#">See Details</a>
+                                </div>
+                                <button class="btn-plus">+</button>
+                            </div>
+                            <div class="sp-item">
+                                <img src="assets/chairs/48550-2-chair-download-free-hq-image 1.png" alt="">
+                                <div class="sp-item-info">
+                                    <h5>Living Room Special Set</h5>
+                                    <div class="rating-mini">
+                                        <span>★</span> 4.9
+                                    </div>
+                                    <p class="sp-item-price">$589.99</p>
+                                    <a href="#">See Details</a>
+                                </div>
+                                <button class="btn-plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Own Creation -->
+        <section class="own-creation section section-dark-green">
+            <div class="container own-creation-container">
+                <div class="own-creation-text">
+                    <h2 class="section-title text-white">Our<br>Own Creation</h2>
+                    <p class="section-subtitle text-white-50">Designed in our studio</p>
+                    <div class="slider-nav">
+                        <span class="nav-dot active"></span>
+                        <span class="nav-dot"></span>
+                        <span class="nav-dot"></span>
+                    </div>
+                </div>
+                <div class="own-creation-gallery">
+                    <div class="creation-card">
+                        <img src="assets/chairs/chair 2.png" alt="Creation 1">
+                    </div>
+                    <div class="creation-card">
+                        <img src="assets/chairs/unnamed 1.png" alt="Creation 2">
+                        <a href="#" class="btn btn--white-floating">Explore All Rooms</a>
+                    </div>
+                    <div class="creation-card">
+                        <img src="assets/chairs/11-chair-png-image 1.png" alt="Creation 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits section">
+            <div class="container">
+                <header class="section-header center">
+                    <h2 class="section-title">Benefits for your expediency</h2>
+                </header>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/INWOOD/payment-method.svg" alt="">
+                        </div>
+                        <h3>Payment Method</h3>
+                        <p>We offer flexible payment options to make it easier.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/INWOOD/return-policy.svg" alt="">
+                        </div>
+                        <h3>Return policy</h3>
+                        <p>You can return a product within 30 days.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/INWOOD/customer-support.svg" alt="">
+                        </div>
+                        <h3>Customer Support</h3>
+                        <p>Our customer support is 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="inspiration" class="testimonials section">
+            <div class="container center">
+                <header class="section-header">
+                    <h2 class="section-title">Testimonials</h2>
+                    <p class="section-subtitle">Over 15,000 happy customers.</p>
+                </header>
+                <div class="testimonial-single">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-long-text">“My experience with Mark is a complete success, from customer
+                        service, wide range of products, clean store, purchasing experience, the newsletter. Thank you.”
+                    </p>
+                    <div class="testimonial-author-block">
+                        <p class="author-name">Leona Paul</p>
+                        <p class="author-role">CEO of Floatcom</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletter" class="newsletter section section-bg-light">
+            <div class="container newsletter-container-split">
+                <div class="newsletter-col-left">
+                    <!-- Image handled by CSS or img tag -->
+                </div>
+                <div class="newsletter-col-right">
+                    <h2 class="newsletter-title-dark">Join Our <span class="Newsletter-span">Newsletter</span></h2>
+                    <p class="newsletter-text-dark">Receive exclusive deals, discounts and many offers.</p>
+                    <form class="newsletter-form-simple" id="newsletterForm" novalidate>
+                        <input type="email" id="email" class="input-bottom-border" placeholder="Enter your email"
+                            required>
+                        <button type="submit" class="btn btn-primary btn-dark">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand-col">
+                <a href="#" class="logo logo-light">
+                    <img src="assets/Logo.svg" alt="" width="144px" height="36px">
+                </a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><img src="assets/INWOOD/facebook.svg" alt=""></a>
+                    <a href="#" aria-label="Instagram"><img src="assets/INWOOD/instagram.svg" alt=""></a>
+                    <a href="#" aria-label="Twitter"><img src="assets/INWOOD/twitter.svg" alt=""></a>
+                    <a href="#" aria-label="LinkedIn"><img src="assets/INWOOD/linkedIn.svg" alt=""></a>
+                </div>
+                <div class="address-block">
+                    <p>123 Housing Society</p>
+                    <p>+923435******8</p>
+                    <p>Islamabad</p>
+                    <p>Pakistan</p>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Order status</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Sizing</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Dining Room</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>Legal Stuff</h4>
+                <ul>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy & Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 INWOOD. All Rights Reserved</p>
+        </div>
+        <div class="End-footer"> Designed and Developed by Shoaib Raza</div>
+    </footer>
+
+    <script src="mainWood.js" defer></script>
+</body>
+
+</html>
